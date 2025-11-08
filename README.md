@@ -192,5 +192,4 @@ This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for d
 
 ---
 
-⭐ If you find this project useful, please give it a star on GitHub!
-
+⭐ If you find this project useful, please give it a star
