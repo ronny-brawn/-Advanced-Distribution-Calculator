@@ -1,71 +1,115 @@
 # Advanced Distribution Calculator
 
-A professional probability distribution calculator built with Python and Tkinter. 
-Perform accurate statistical calculations across 11 distributions with visualization and history tracking.
+A professional probability distribution calculator with cross-platform support.
+
+![Python](https://img.shields.io/badge/Python-3.6%2B-blue)
+![SciPy](https://img.shields.io/badge/SciPy-Required-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)
 
 ## Features
 
-### 🎯 Statistical Distributions
-- **Discrete**: Binomial, Poisson, Geometric, Hypergeometric
-- **Continuous**: Normal, Exponential, Uniform, Weibull, Gamma, Beta, Lognormal
-- **Dual Calculation Modes**: Single point probabilities & range probabilities
-
-### 📊 Visualization
-- **Interactive Plots**: Real-time PDF/PMF visualization
-- **Custom Shading**: Visual probability regions with color picker
-- **Plot Export**: Save as PNG, JPEG, or PDF
-
-### 💾 Data Management
-- **Complete History**: Track all calculations with timestamps
-- **CSV Export**: Save history for further analysis
-
-### 🎨 User Experience
-- **Professional UI**: Modern interface with tooltips
-- **Dynamic Inputs**: Context-aware parameter fields
-- **Font Scaling**: Adjustable text size
+- **11 Statistical Distributions**: Binomial, Poisson, Normal, Exponential, Geometric, Uniform, Weibull, Gamma, Beta, Lognormal, Hypergeometric
+- **Dual Calculation Modes**: Single point and range probabilities
+- **Interactive Visualization**: Real-time PDF/PMF plots
+- **Cross-Platform**: Run on Windows, macOS, and Linux
 
 ## Installation
 
+### Linux (Debian/Ubuntu)
+```bash
+sudo dpkg -i advanced-distribution-calculator.deb
+sudo apt-get install -f
+```
+
+### From Source
 ```bash
 git clone https://github.com/ronny-brawn/Advanced-Distribution-Calculator.git
 cd Advanced-Distribution-Calculator
-pip install scipy matplotlib numpy
+pip install -r requirements.txt
 python distribution_calculator.py
 ```
 
-### Requirements
+## Building Executables
+
+### Creating Windows Executable (.exe)
+
+1. **Install PyInstaller:**
+```bash
+pip install pyinstaller
+```
+
+2. **Build the executable:**
+```bash
+pyinstaller --onefile --windowed --name "Advanced Distribution Calculator" distribution_calculator.py
+```
+
+3. **The executable will be in the `dist` folder**
+
+### Creating macOS Application (.app)
+
+1. **Install PyInstaller:**
+```bash
+pip install pyinstaller
+```
+
+2. **Build the application bundle:**
+```bash
+pyinstaller --onefile --windowed --name "Advanced Distribution Calculator" distribution_calculator.py
+```
+
+3. **The .app bundle will be in the `dist` folder**
+
+### Additional Packaging Options
+
+**For better macOS integration:**
+```bash
+pyinstaller --windowed --name "Advanced Distribution Calculator" --icon=icon.icns distribution_calculator.py
+```
+
+**For Windows with custom icon:**
+```bash
+pyinstaller --onefile --windowed --name "Advanced Distribution Calculator" --icon=icon.ico distribution_calculator.py
+```
+
+**Create Linux AppImage:**
+```bash
+pip install pyinstaller
+pyinstaller --onefile --windowed distribution_calculator.py
+# Use linuxdeploy or appimagetool to create AppImage
+```
+
+## Requirements
 - Python 3.6+
 - scipy
-- matplotlib
+- matplotlib  
 - numpy
+- tkinter
 
-## Usage
-
-1. Select a distribution from the dropdown
-2. Choose between single point or range mode
-3. Enter parameters (fields update dynamically)
-4. Click **CALCULATE** or press **Enter**
-5. View results and optional plot
+## Building Dependencies
+```bash
+pip install scipy matplotlib numpy
+```
 
 ## Supported Distributions
 
-| Distribution | Parameters | Type |
-|-------------|------------|------|
-| Binomial | n, p, k | Discrete |
-| Poisson | λ, k | Discrete |
-| Normal | μ, σ, x | Continuous |
-| Exponential | λ, t | Continuous |
-| Geometric | p, k | Discrete |
-| Uniform | a, b, x | Continuous |
-| Weibull | λ, k, t | Continuous |
-| Gamma | α, θ, t | Continuous |
-| Beta | α, β, x | Continuous |
-| Lognormal | μ_log, σ_log, x | Continuous |
-| Hypergeometric | M, n, N, k | Discrete |
+| Distribution | Type |
+|-------------|------|
+| Binomial | Discrete |
+| Poisson | Discrete |
+| Normal | Continuous |
+| Exponential | Continuous |
+| Geometric | Discrete |
+| Uniform | Continuous |
+| Weibull | Continuous |
+| Gamma | Continuous |
+| Beta | Continuous |
+| Lognormal | Continuous |
+| Hypergeometric | Discrete |
 
 ## License
 
-MIT License - see LICENSE file for details.
+MIT License
 
 ---
 
