@@ -13,6 +13,29 @@ A professional probability distribution calculator with cross-platform support.
 - **Dual Calculation Modes**: Single point and range probabilities
 - **Interactive Visualization**: Real-time PDF/PMF plots
 - **Cross-Platform**: Run on Windows, macOS, and Linux
+  
+📊 Visualization
+
+    Interactive Plots: Real-time PDF/PMF visualization
+
+    Custom Shading: Visual probability regions with color picker
+
+    Plot Export: Save as PNG, JPEG, or PDF
+
+💾 Data Management
+
+    Complete History: Track all calculations with timestamps
+
+    CSV Export: Save history for further analysis
+
+🎨 User Experience
+
+    Professional UI: Modern interface with tooltips
+
+    Dynamic Inputs: Context-aware parameter fields
+
+    Font Scaling: Adjustable text size
+    
 
 ## Installation
 
@@ -106,6 +129,16 @@ pip install scipy matplotlib numpy
 | Beta | Continuous |
 | Lognormal | Continuous |
 | Hypergeometric | Discrete |
+
+Usage
+
+    1. Launch from applications menu or run distribution-calculator
+
+    2. Select distribution and calculation mode
+
+    3. Enter parameters
+
+    4. View results with optional visualization
 
 ## License
 
