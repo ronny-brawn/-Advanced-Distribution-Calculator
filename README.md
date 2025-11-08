@@ -53,7 +53,8 @@ and dual calculation modes.
 <img width="1021" height="801" alt="Screenshot from 2025-11-08 05-08-01" src="https://github.com/user-attachments/assets/a4e1a525-9136-4f9b-a182-7f8fe1a864ef" />
 
 **4. Exporting Plots**
-<img width="792" height="542" alt="Screenshot from 2025-11-08 05-06-12" src="https://github.com/user-attachments/assets/96266dac-4834-47b7-b27f-b8544f26fc87" /><br>
+
+<img width="792" height="542" alt="Screenshot from 2025-11-08 05-06-12" src="https://github.com/user-attachments/assets/96266dac-4834-47b7-b27f-b8544f26fc87" />
 
 **5. History review**
 <img width="1021" height="801" alt="Screenshot from 2025-11-08 05-08-50" src="https://github.com/user-attachments/assets/e3742d8d-3672-447f-a50c-8df4c21add5d" />
