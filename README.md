@@ -1,150 +1,194 @@
+
 # Advanced Distribution Calculator
 
-A professional probability distribution calculator with cross-platform support.
+A professional **probability distribution calculator** with cross-platform support, interactive visualizations, 
+and dual calculation modes.
 
 ![Python](https://img.shields.io/badge/Python-3.6%2B-blue)
 ![SciPy](https://img.shields.io/badge/SciPy-Required-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)
 
+---
+
 ## Features
 
-- **11 Statistical Distributions**: Binomial, Poisson, Normal, Exponential, Geometric, Uniform, Weibull, Gamma, Beta, Lognormal, Hypergeometric
-- **Dual Calculation Modes**: Single point and range probabilities
-- **Interactive Visualization**: Real-time PDF/PMF plots
-- **Cross-Platform**: Run on Windows, macOS, and Linux
-  
-📊 Visualization
+* **11 Statistical Distributions**
+  Binomial, Poisson, Normal, Exponential, Geometric, Uniform, Weibull, Gamma, Beta, Lognormal, Hypergeometric
 
-    Interactive Plots: Real-time PDF/PMF visualization
+* **Dual Calculation Modes**
+  Single-point probability and range probability calculations
 
-    Custom Shading: Visual probability regions with color picker
+* **Interactive Visualization**
 
-    Plot Export: Save as PNG, JPEG, or PDF
+  * Real-time PDF/PMF plots
+  * Custom shading for probability regions
+  * Export plots as PNG, JPEG, or PDF
 
-💾 Data Management
+* **Data Management**
 
-    Complete History: Track all calculations with timestamps
+  * Complete calculation history with timestamps
+  * CSV export for further analysis
 
-    CSV Export: Save history for further analysis
+* **Professional User Experience**
 
-🎨 User Experience
+  * Modern, intuitive UI with tooltips
+  * Dynamic, context-aware input fields
+  * Adjustable font scaling
 
-    Professional UI: Modern interface with tooltips
+---
 
-    Dynamic Inputs: Context-aware parameter fields
+## Screenshots / GIFs
 
-    Font Scaling: Adjustable text size
-    
+**1. Main Interface**
+
+![Main Interface](https://via.placeholder.com/600x350?text=Main+Interface)
+
+<img width="1027" height="810" alt="Screenshot from 2025-11-08 05-03-47" src="https://github.com/user-attachments/assets/76ded600-7870-4378-9aa4-abe65d9b8b91" />
+
+**2. PDF/PMF Visualization (Binomial)**
+
+![PDF Visualization](https://via.placeholder.com/600x350?text=PDF+Visualization)
+
+<img width="1028" height="471" alt="Screenshot from 2025-11-08 05-05-18" src="https://github.com/user-attachments/assets/f08344a3-a780-4dfb-8bd7-f42e3322cfa5" />
+
+**3. Range Probability Highlighting**
+
+![Range Probability](https://via.placeholder.com/600x350?text=Range+Probability)
+<img width="1021" height="801" alt="Screenshot from 2025-11-08 05-08-01" src="https://github.com/user-attachments/assets/a4e1a525-9136-4f9b-a182-7f8fe1a864ef" />
+
+**4. Exporting Plots**
+
+![Export Plot](https://via.placeholder.com/600x350?text=Export+Plot)
+<img width="792" height="542" alt="Screenshot from 2025-11-08 05-06-12" src="https://github.com/user-attachments/assets/96266dac-4834-47b7-b27f-b8544f26fc87" />
+
+**5. History review**
+<img width="1021" height="801" alt="Screenshot from 2025-11-08 05-08-50" src="https://github.com/user-attachments/assets/e3742d8d-3672-447f-a50c-8df4c21add5d" />
+
+---
+
+## Supported Distributions
+
+| Distribution   | Type       |
+| -------------- | ---------- |
+| Binomial       | Discrete   |
+| Poisson        | Discrete   |
+| Normal         | Continuous |
+| Exponential    | Continuous |
+| Geometric      | Discrete   |
+| Uniform        | Continuous |
+| Weibull        | Continuous |
+| Gamma          | Continuous |
+| Beta           | Continuous |
+| Lognormal      | Continuous |
+| Hypergeometric | Discrete   |
+
+---
 
 ## Installation
 
-### Linux (Debian/Ubuntu)
+### 1. Using Source (Recommended)
+
 ```bash
-https://www.mediafire.com/file/9ab4651m4a08xm2/advanced-distribution-calculator.deb/file
+git clone https://github.com/ronny-brawn/Advanced-Distribution-Calculator.git
+cd Advanced-Distribution-Calculator
+
+python -m venv venv
+source venv/bin/activate  # Linux/macOS
+venv\Scripts\activate     # Windows
+
+pip install -r requirements.txt
+
+python distribution_calculator.py
+```
+
+### 2. Linux (.deb Package)
+
+```bash
+wget https://www.mediafire.com/file/9ab4651m4a08xm2/advanced-distribution-calculator.deb/file
 sudo dpkg -i advanced-distribution-calculator.deb
 sudo apt-get install -f
 ```
 
-### From Source
-```bash
-git clone https://github.com/ronny-brawn/Advanced-Distribution-Calculator.git
-cd Advanced-Distribution-Calculator
-pip install -r requirements.txt
-python distribution_calculator.py
-```
+> ⚠️ Note: Verify the `.deb` package before installation for security.
+
+---
 
 ## Building Executables
 
-### Creating Windows Executable (.exe)
+### Windows (.exe)
 
-1. **Install PyInstaller:**
 ```bash
 pip install pyinstaller
-```
-
-2. **Build the executable:**
-```bash
 pyinstaller --onefile --windowed --name "Advanced Distribution Calculator" distribution_calculator.py
 ```
 
-3. **The executable will be in the `dist` folder**
+Optional custom icon:
 
-### Creating macOS Application (.app)
-
-1. **Install PyInstaller:**
 ```bash
-pip install pyinstaller
+--icon=icon.ico
 ```
 
-2. **Build the application bundle:**
+### macOS (.app)
+
 ```bash
+pip install pyinstaller
 pyinstaller --onefile --windowed --name "Advanced Distribution Calculator" distribution_calculator.py
 ```
 
-3. **The .app bundle will be in the `dist` folder**
+Optional custom icon:
 
-### Additional Packaging Options
-
-**For better macOS integration:**
 ```bash
-pyinstaller --windowed --name "Advanced Distribution Calculator" --icon=icon.icns distribution_calculator.py
+--icon=icon.icns
 ```
 
-**For Windows with custom icon:**
-```bash
-pyinstaller --onefile --windowed --name "Advanced Distribution Calculator" --icon=icon.ico distribution_calculator.py
-```
+### Linux (AppImage)
 
-**Create Linux AppImage:**
 ```bash
 pip install pyinstaller
 pyinstaller --onefile --windowed distribution_calculator.py
-# Use linuxdeploy or appimagetool to create AppImage
+# Use linuxdeploy or AppImageTool to create AppImage
 ```
 
-## Requirements
-- Python 3.6+
-- scipy
-- matplotlib  
-- numpy
-- tkinter
+---
 
-## Building Dependencies
+## Usage Example
+
+**Scenario:** Probability of exactly 5 successes in 10 trials (Binomial)
+
+1. Launch the calculator
+2. Select **Binomial** distribution
+3. Enter parameters: `n=10`, `p=0.5`, `x=5`
+4. Click **Calculate** → get `P(X=5)`
+5. Optional: visualize the PDF with highlighted probability region
+
+**Range probability example:**
+
+* Find probability of `3 ≤ X ≤ 7` with the same parameters
+
+---
+
+## Dependencies
+
+* Python 3.6+
+* `scipy`
+* `numpy`
+* `matplotlib`
+* `tkinter`
+
+Install all dependencies:
+
 ```bash
 pip install scipy matplotlib numpy
 ```
 
-## Supported Distributions
-
-| Distribution | Type |
-|-------------|------|
-| Binomial | Discrete |
-| Poisson | Discrete |
-| Normal | Continuous |
-| Exponential | Continuous |
-| Geometric | Discrete |
-| Uniform | Continuous |
-| Weibull | Continuous |
-| Gamma | Continuous |
-| Beta | Continuous |
-| Lognormal | Continuous |
-| Hypergeometric | Discrete |
-
-Usage
-
-    1. Launch from applications menu or run distribution-calculator
-
-    2. Select distribution and calculation mode
-
-    3. Enter parameters
-
-    4. View results with optional visualization
+---
 
 ## License
 
-MIT License
+This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
 
 ---
 
-**⭐ If you find this project useful, please give it a star on GitHub!**
+⭐ If you find this project useful, please give it a star on GitHub!
+
