@@ -44,17 +44,25 @@ and dual calculation modes.
 
 <img width="1027" height="810" alt="Screenshot from 2025-11-08 05-03-47" src="https://github.com/user-attachments/assets/76ded600-7870-4378-9aa4-abe65d9b8b91" />
 
+
+
 **2. PDF/PMF Visualization (Binomial)**
 
 <img width="1028" height="471" alt="Screenshot from 2025-11-08 05-05-18" src="https://github.com/user-attachments/assets/f08344a3-a780-4dfb-8bd7-f42e3322cfa5" />
+
+
 
 **3. Range Probability Highlighting**
 
 <img width="1021" height="801" alt="Screenshot from 2025-11-08 05-08-01" src="https://github.com/user-attachments/assets/a4e1a525-9136-4f9b-a182-7f8fe1a864ef" />
 
+
+
 **4. Exporting Plots**
 
 <img width="792" height="542" alt="Screenshot from 2025-11-08 05-06-12" src="https://github.com/user-attachments/assets/96266dac-4834-47b7-b27f-b8544f26fc87" />
+
+
 
 **5. History review**
 <img width="1021" height="801" alt="Screenshot from 2025-11-08 05-08-50" src="https://github.com/user-attachments/assets/e3742d8d-3672-447f-a50c-8df4c21add5d" />
